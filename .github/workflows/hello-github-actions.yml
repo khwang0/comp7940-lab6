@@ -6,12 +6,12 @@
      my-helloworld-job:
        runs-on: ubuntu-latest   		# Set the type of machine to run on
        steps:
-         - uses: actions/checkout@v2   # Checks out a copy of your repository on the ubuntu-latest machine
+         - uses: actions/checkout@v2   # Step 1: Checks out a copy of your repository on the ubuntu-latest machine
 
-         - name: Say Hello World
-           run: echo 'Hello World'  	# the action
+         - name: Say Hello World       # Step 2: Type the word 'Hello World'
+           run: echo 'Hello World'  	
            
-         - name: View a file
+         - name: View a file           # Step 3: Two sub-steps involved
            run: |
-              echo 'Viewing the file: '
+              echo 'Viewing the file: '   
               cat requirements.txt 
