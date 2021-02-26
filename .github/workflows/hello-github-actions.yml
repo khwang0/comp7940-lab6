@@ -7,4 +7,9 @@
        runs-on: ubuntu-latest   		# Set the type of machine to run on
        steps:
          - uses: actions/checkout@v2   # Checks out a copy of your repository on the ubuntu-latest machine
+         - name: Say Hello World
          - run: echo 'Hello World'  	# the action
+         - name: View a file
+         - run: |
+              echo 'Viewing the file: '
+              cat requirements.txt 
